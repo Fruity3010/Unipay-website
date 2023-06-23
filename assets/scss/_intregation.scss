@@ -1,0 +1,133 @@
+/* 12 - intregation section - start
+==================================================================================================== */
+.intregation_section {
+	position: relative;
+	&.bg_gradient_gray {
+		background-image: linear-gradient(0deg, transparent 0%, rgb(246, 251, 255) 100%);
+	}
+
+	.dot_image_1 {
+		top: -160px;
+		right: -88px;
+		max-width: 158px;
+	}
+
+	.intregation_image_1 {
+		max-width: 743px;
+		margin: 0px auto;
+		position: relative;
+		margin-bottom: -35px;
+		.phone_image {
+			left: -55px;
+			bottom: -35px;
+			max-width: 172px;
+			position: absolute;
+		}
+		.watch_image {
+			right: -20px;
+			bottom: -33px;
+			max-width: 128px;
+			position: absolute;
+		}
+	}
+
+	.apps_wrap {
+		bottom: 120px;
+		position: absolute;
+		>ul {
+			width: 340px;
+			height: 405px;
+			>li {
+				width: 70px;
+				height: 70px;
+				position: absolute;
+				>a {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					overflow: hidden;
+					align-items: center;
+					border-radius: 100%;
+					background-color: rgb(255, 255, 255);
+					box-shadow: 0px 30px 60px 0px rgba(0, 11, 40, 0.1);
+					>img {
+						margin: auto;
+						height: auto;
+					}
+				}
+			}
+		}
+		&.wrap_left {
+			left: 254px;
+			>ul {
+				>li {
+					&:nth-child(1) {
+						top: 0px;
+						right: 0px;
+						>a {
+							animation: bounceIn 3000ms infinite alternate;
+						}
+					}
+					&:nth-child(2) {
+						left: 0px;
+						bottom: 110px;
+						>a {
+							animation: bounceIn 3400ms infinite alternate;
+						}
+					}
+					&:nth-child(3) {
+						top: 135px;
+						left: 140px;
+						>a {
+							animation: bounceIn 3600ms infinite alternate;
+						}
+					}
+					&:nth-child(4) {
+						bottom: 0px;
+						right: 100px;
+						>a {
+							animation: bounceIn 3800ms infinite alternate;
+						}
+					}
+				}
+			}
+		}
+		&.wrap_right {
+			right: 254px;
+			>ul {
+				>li {
+					&:nth-child(1) {
+						top: 0px;
+						left: 0px;
+						>a {
+							animation: bounceIn 3000ms infinite alternate;
+						}
+					}
+					&:nth-child(2) {
+						right: 0px;
+						bottom: 110px;
+						>a {
+							animation: bounceIn 3400ms infinite alternate;
+						}
+					}
+					&:nth-child(3) {
+						top: 135px;
+						right: 140px;
+						>a {
+							animation: bounceIn 3600ms infinite alternate;
+						}
+					}
+					&:nth-child(4) {
+						bottom: 0px;
+						left: 100px;
+						>a {
+							animation: bounceIn 3800ms infinite alternate;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* 12 - intregation section - end
+==================================================================================================== */

@@ -1,0 +1,45 @@
+/* 24 - contact page - start
+==================================================================================================== */
+.contact_section {
+
+	.contact_info {
+		margin-bottom: 35px;
+		padding-bottom: 35px;
+		border-bottom: 1px solid #eeebf6;
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0px !important;
+			padding-bottom: 0px !important;
+		}
+		.list_title {
+			font-size: 24px;
+			margin-bottom: 25px;
+		}
+		>ul {
+			>li {
+				span {
+					margin-right: 8px;
+					display: inline-block;
+					color: $default-darkblue;
+				}
+			}
+		}
+	}
+
+	.contact_form {
+		.form_item {
+			textarea {
+				min-height: 180px;
+			}
+		}
+	}
+
+}
+
+.map_section {
+	.google-map {
+		height: 460px;
+	}
+}
+/* 24 - contact page - end
+==================================================================================================== */

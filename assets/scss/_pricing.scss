@@ -1,0 +1,340 @@
+/* 16 - pricing page - start
+==================================================================================================== */
+
+/* pricing section settings - start */
+.pricing_section {
+	&.bg_gray {
+		background-color: rgb(250, 250, 254);
+	}
+	&.bg_gray_2 {
+		background-image: linear-gradient(-45deg, rgb(240,244,255) 0%, rgb(224,229,255) 100%);
+	}
+	&.bg_gray_3 {
+		// background-image: linear-gradient(0deg, transparent 0%, rgb(240,244,255) 100%);
+		background-image: linear-gradient(0deg, transparent 0%, #e1e6ff 90%);
+	}
+
+	.spahe_1 {
+		top: 28px;
+		left: -33px;
+		max-width: 66px;
+	}
+	.spahe_2 {
+		top: 130px;
+		left: -80px;
+		max-width: 30px;
+	}
+	.spahe_3 {
+		left: 110px;
+		bottom: 0px;
+		max-width: 48px;
+	}
+	.spahe_4 {
+		right: 83px;
+		bottom: 0px;
+		max-width: 48px;
+	}
+	.spahe_5 {
+		top: 18px;
+		right: 12px;
+		max-width: 74px;
+	}
+	.spahe_6 {
+		right: 30px;
+		width: 20px;
+		bottom: -45px;
+	}
+}
+/* pricing section settings - end */
+
+/* pricing plan 1 - start */
+.pricing_plan_1 {
+	margin-top: 30px;
+	padding: 45px 65px;
+	text-align: center;
+	background-color: rgb(245, 248, 255);
+	transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+	// box-shadow: 0px 20px 30px 0px rgba(0, 33, 121, 0.08);
+	&:hover {
+		background-color: #ffffff;
+		transform: translateY(-16px);
+		box-shadow: 0px 20px 40px 0px rgba(0, 33, 121, 0.08);
+	}
+	.pricing_header {
+		&.mb-50 {
+			margin-bottom: 40px;
+		}
+		.title_text {
+			font-size: 20px;
+			margin-bottom: 20px;
+			color: $default-blue;
+			&.text_lightblue {
+				color: #309bf2;
+			}
+			&.text_lightgreen {
+				color: #61c330;
+			}
+			&.text_orange {
+				color: #ffa512;
+			}
+		}
+		.price_text {
+			strong {
+				line-height: 1;
+				font-size: 48px;
+				display: inline-block;
+				color: $default-darkblue;
+				font-family: $heading-font;
+			}
+			sup {
+				top: -20px;
+				margin-right: 5px;
+			}
+			sup,sub {
+				line-height: 1;
+				font-size: 16px;
+				color: $default-darkblue;
+				font-family: 'Sofia Pro SemiBold';
+			}
+			sub {
+				color: #677294;
+			}
+		}
+	}
+	.item_icon {
+		width: 160px;
+		height: 125px;
+		display: flex;
+		text-align: center;
+		margin: 0px auto 50px;
+		img {
+			margin: auto;
+			height: auto;
+		}
+	}
+	.info_list {
+		margin-bottom: 40px;
+		>ul {
+			>li {
+				font-size: 16px;
+				line-height: 1.1;
+				margin-bottom: 25px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+			}
+		}
+	}
+	.btn {
+		height: 50px;
+		min-width: 140px;
+		line-height: 46px;
+	}
+}
+
+.pricing_tab {
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 50px;
+	color: $default-blue;
+	.tab_btn {
+		cursor: pointer;
+	}
+	.year_tab {
+		color: $default-darkblue;
+	}
+	&.active{
+		.month_tab {
+			color: $default-darkblue; 
+		}
+		.year_tab {
+			color: $default-blue;
+		}
+	}
+	.tab_switcher {
+		width: 60px;
+		height: 24px;
+		cursor: pointer;
+		margin: 0px 10px;
+		position: relative;
+		border-radius: 45px;
+		display: inline-block;
+		background-color: #ffffff;
+		transform: translateY(7px);
+		&:before {
+			top: -3px;
+			left: 0px;
+			content: '';
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			border-radius: 100%;
+			background: $default-blue;
+			transition: $default-transition;
+			box-shadow: 0px 5px 20px 0px rgba(94, 44, 237, 0.25);
+		}
+		&.active {
+			&:before {
+				left: calc(100% - 30px);
+			}
+		}
+	}
+}
+
+.pricing_plan_1 {
+	.yearly_price {
+		display: none;
+	}
+
+	&.change_amount {
+		.yearly_price {
+			display: block;
+		}
+		.monthly_price {
+			display: none;
+		}
+	}
+}
+/* pricing plan 1 - end */
+
+/* pricing plan 2 - start */
+.pricing_plan_2 {
+	margin-top: 30px;
+	overflow: hidden;
+	padding: 50px 40px;
+	position: relative;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+	transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+	&:hover {
+		background-color: #ffffff;
+		transform: translateY(-16px);
+		box-shadow: 0px 40px 80px 0px rgba(1, 1, 64, 0.08);
+	}
+	.item_label {
+		top: 0px;
+		right: 30px;
+		max-width: 30px;
+		position: absolute;
+		display: inline-block;
+	}
+	.pricing_header {
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #e5e5e5;
+		.title_text {
+			font-size: 20px;
+			color: $default-darkblue;
+			&.text_lightblue {
+				color: #309bf2;
+			}
+			&.text_lightgreen {
+				color: #61c330;
+			}
+			&.text_orange {
+				color: #ffa512;
+			}
+		}
+
+		.price_text {
+			strong {
+				line-height: 1;
+				font-size: 48px;
+				display: inline-block;
+				color: $default-darkblue;
+				font-family: $heading-font;
+			}
+			sup {
+				top: -20px;
+				margin-right: 5px;
+			}
+			sup,sub {
+				line-height: 1;
+				font-size: 16px;
+				color: $default-darkblue;
+				font-family: 'Sofia Pro SemiBold';
+			}
+			sub {
+				color: #677294;
+			}
+		}
+	}
+	.info_list {
+		margin-bottom: 40px;
+		>ul {
+			li {
+				font-size: 16px;
+				line-height: 1.1;
+				margin-bottom: 25px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+				i {
+					float: right;
+					&.fa-check-circle {
+						color: #00a37b;
+					}
+					&.fa-times-circle {
+						color: #ff99af;
+					}
+				}
+			}
+		}
+	}
+	.btn {
+		height: 50px;
+		display: block;
+		line-height: 46px;
+	}
+}
+/* pricing plan 2 - end */
+
+/* pricing plan 3 - start */
+.pricing_plan_3 {
+	margin-top: 30px;
+	text-align: center;
+	padding: 50px 60px;
+	border-radius: 4px;
+	background-color: #f9f9f9;
+	.price_text {
+		display: block;
+		line-height: 1;
+		font-size: 48px;
+		margin-bottom: 10px;
+		color: $default-darkblue;
+		font-family: $heading-font;
+	}
+	.title_text {
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+	.btn {
+		height: 50px;
+		min-width: 160px;
+		line-height: 46px;
+		.fa-long-arrow-right {
+			margin-left: 5px;
+			transform: translateY(2px);
+		}
+	}
+
+	&.special_item {
+		color: #ffffff;
+		padding: 80px 60px;
+		background-image: linear-gradient( 0deg, rgb(48,28,171) 0%, rgb(68,72,211) 52%, rgb(87,116,250) 100%);
+		.price_text,
+		.title_text {
+			color: #ffffff;
+		}
+	}
+}
+/* pricing plan 3 - end */
+
+/* 16 - pricing page - end
+==================================================================================================== */

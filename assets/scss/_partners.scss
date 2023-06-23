@@ -1,0 +1,34 @@
+/* 07 - partners section - start
+==================================================================================================== */
+.partner_section {
+	.shape_1 {
+		left: 0px;
+		bottom: 0px;
+		max-width: 265px;
+	}
+
+	.dot_image_1 {
+		top: -240px;
+		left: -88px;
+		max-width: 158px;
+	}
+
+	.partner_logo {
+		height: 45px;
+		display: flex;
+		flex: 0 0 20%;
+		max-width: 20%;
+		margin-top: 50px;
+		text-align: center;
+		align-items: center;
+		>a {
+			margin: auto;
+			max-width: 130px;
+			>img {
+				height: auto;
+			}
+		}
+	}
+}
+/* 07 - partners section - end
+==================================================================================================== */

@@ -1,0 +1,820 @@
+/* 19 - all details pages - start
+==================================================================================================== */
+
+/* details section setting - start
+================================================== */
+.details_section {
+
+	&.bg_gray {
+		background-color: #fbfbfd;
+	}
+
+	.item_content {
+		.info_list {
+			>ul {
+				>li {
+					line-height: 1;
+					margin-bottom: 25px;
+					&:last-child {
+						margin-bottom: 0px !important;
+					}
+					strong {
+						color: $default-darkblue;
+					}
+					>a {
+						margin-left: 6px;
+						color: $default-color;
+						&:hover {
+							color: $default-blue;
+						}
+					}
+				}
+			}
+		}
+
+		.btns_group {
+			.btn {
+				height: 50px;
+				line-height: 48px;
+			}
+			.heart_btn {
+				font-size: 20px;
+				margin-top: 8px;
+				font-weight: 500;
+				color: $default-color;
+				&:hover {
+					color: $default-blue;
+				}
+				>i {
+					color: $default-blue;
+				}
+			}
+		}
+	}
+
+	.item_title {
+		font-size: 36px;
+		margin-bottom: 40px;
+	}
+
+	.title_text {
+		font-size: 30px;
+	}
+
+	.chield_item {
+		&.bg_gray {
+			background-color: #fbfbfd;
+		}
+
+		.item_content {
+			.info_list {
+				>ul {
+					>li {
+						line-height: 1;
+						position: relative;
+						padding-left: 25px;
+						margin-bottom: 20px;
+						color: $default-darkblue;
+						&:last-child {
+							margin-bottom: 0px !important;
+						}
+						&:before {
+							top: 2px;
+							left: 0px;
+							font-size: 14px;
+							content: '\f00c';
+							font-weight: 400;
+							position: absolute;
+							color: $default-blue;
+							font-family: 'Font Awesome 5 Pro';
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.share_links_rounded {
+		span {
+			display: block;
+			margin-bottom: 10px;
+			color: $default-darkblue;
+		}
+		>ul {
+			>li {
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				margin-right: 10px;
+				&:last-child {
+					margin-right: 0px !important;
+				}
+				>a {
+					width: 100%;
+					height: 100%;
+					display: block;
+					color: #ffffff;
+					font-size: 14px;
+					overflow: hidden;
+					line-height: 44px;
+					position: relative;
+					border-radius: 100%;
+					&.bg_facebook {
+						background-color: #4779de;
+					}
+					&.bg_twitter {
+						background-color: #1da1f3;
+					}
+					&.bg_google {
+						background-color: #e43e30;
+					}
+					i {
+						left: 50%;
+						position: absolute;
+						transform: translateX(-50%);
+						transition: $default-transition;
+						&:nth-child(1) {
+							top: 55%;
+							transform: translate(-50%, -55%);
+						}
+						&:nth-child(2) {
+							top: 100%;
+							opacity: 0;
+						}
+					}
+
+					&:hover {
+						i {
+							left: 50%;
+							position: absolute;
+							transform: translateX(-50%);
+							transition: $default-transition;
+							&:nth-child(1) {
+								top: -100%;
+								opacity: 0;
+								transform: translateX(-50%);
+							}
+							&:nth-child(2) {
+								top: 55%;
+								opacity: 1;
+								transform: translate(-50%, -55%);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.prev_next_post {
+		>a {
+			color: $default-color;
+			&:hover {
+				color: $default-blue;
+			}
+		}
+	}
+
+	.details_images_carousel {
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				margin: 0px;
+				width: 35px;
+				height: 35px;
+				&:before {
+					font-size: 14px;
+					line-height: 35px;
+					border: 1px solid #e5e5e6;
+				}
+				&:hover {
+					&:before {
+						color: #ffffff;
+						background: $default-blue;
+						border-color: $default-blue;
+					}
+				}
+			}
+			.owl-prev {
+				left: 20px !important;
+			}
+			.owl-next {
+				right: 20px !important;
+			}
+		}
+	}
+
+	.btns_group {
+		>ul {
+			>li {
+				margin-right: 10px;
+				&:last-child {
+					margin-right: 0px !important;
+				}
+			}
+		}
+	}
+
+}
+/* details section setting - end
+================================================== */
+
+
+/* job details page - start
+================================================== */
+.details_section {
+	.job_info_list {
+		>ul {
+			>li {
+				padding-left: 35px;
+				position: relative;
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+				&:before {
+					top: 2px;
+					left: 0px;
+					font-size: 14px;
+					content: '\f061';
+					font-weight: 400;
+					position: absolute;
+					color: $default-blue;
+					font-family: "Font Awesome 5 Pro";
+				}
+			}
+		}
+	}
+}
+
+.job_details_info {
+	padding: 50px;
+	background-color: #ffffff;
+	box-shadow: 0px 3px 4px 0px rgba(38, 59, 94, 0.1);
+	>.icon {
+		line-height: 1;
+		font-size: 40px;
+		margin-bottom: 30px;
+		display: inline-block;
+		text-shadow: 0px 10px 20px rgba(62, 92, 255, 0.2);
+		background: -webkit-linear-gradient(#301cab, #5672f8);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.title_text {
+		font-size: 25px;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #eeebf6;
+	}
+	>ul {
+		>li {
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0px !important;
+			}
+			.item_icon {
+				float: left;
+				width: 40px;
+				height: 40px;
+				font-size: 18px;
+				color: $default-blue;
+			}
+			.item_contact {
+				display: table;
+				h4 {
+					font-size: 16px;
+					font-weight: 500;
+					margin-bottom: 5px;
+					font-family: $heading-font;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+/* job details page - end
+================================================== */
+
+
+/* blog details page - start
+================================================== */
+.details_section {
+
+	.list_title {
+		float: left;
+		font-size: 13px;
+		margin-right: 8px;
+		color: $default-darkblue;
+	}
+	.share_links {
+		.list_title {
+			color: #051441;
+		}
+		>ul {
+			>li {
+				margin-right: 15px;
+				&:last-child {
+					margin-right: 0px !important;
+				}
+				>a {
+					display: block;
+					font-size: 12px;
+					color: $default-color;
+					&:hover {
+						color: $default-blue;
+					}
+				}
+			}
+		}
+	}
+
+	.comment_area {
+		.title_text {
+			&.mb-50 {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	.comment_btn {
+		font-size: 14px;
+		color: $default-color;
+		i {
+			color: $default-blue;
+		}
+		&:hover {
+			color: $default-blue;
+		}
+	}
+
+	.item_tag {
+		.list_title {
+			margin: 8px 0px;
+			margin-right: 8px;
+		}
+		>ul {
+			li {
+				margin-right: 10px;
+				&:last-child {
+					margin-right: 0px !important;
+				}
+				>a {
+					width: 100%;
+					height: 40px;
+					display: block;
+					font-size: 14px;
+					line-height: 40px;
+					padding: 0px 20px;
+					text-align: center;
+					border-radius: 45px;
+					color: $default-color;
+					background-color: #f0f2f9;
+					&:hover {
+						color: #ffffff;
+						background-color: $default-blue;
+					}
+				}
+			}
+		}
+	}
+
+	.blog_grid {
+		margin-top: 40px;
+		.post_date {
+			min-width: 65px;
+			min-height: 60px;
+			padding: 12px 10px;
+			strong {
+				font-size: 24px;
+				margin-bottom: 3px;
+			}
+			span {
+				font-size: 14px;
+			}
+		}
+
+		.item_image {
+			margin-bottom: 20px;
+		}
+
+		.item_title {
+			margin-bottom: 15px;
+			>a {
+				display: block;
+				font-size: 20px;
+			}
+		}
+
+		.item_image {
+			.popup_video {
+				width: 60px;
+				height: 60px;
+				font-size: 50px;
+				line-height: 62px;
+				animation: ripple_2 2s linear infinite;
+			}
+		}
+	}
+
+	.comment_area {
+		.comment_item {
+			padding: 30px;
+			position: relative;
+			padding-left: 130px;
+			margin-bottom: 30px;
+			background-color: #f7f8fb;
+			&:last-child {
+				margin-bottom: 0px !important;
+			}
+			.reply_btn {
+				top: 33px;
+				right: 30px;
+				font-size: 13px;
+				font-weight: 600;
+				position: absolute;
+				color: $default-darkblue;
+				&:hover {
+					color: $default-blue;
+				}
+			}
+
+			.thumbnail_image {
+				top: 30px;
+				left: 30px;
+				width: 70px;
+				height: 70px;
+				overflow: hidden;
+				position: absolute;
+				border-radius: 100%;
+			}
+			.comment_content {
+				padding-top: 6px;
+				position: relative;
+			}
+			.admin_name {
+				font-size: 20px;
+				margin-bottom: 5px;
+			}
+			.post_time {
+				color: #85859c;
+				display: block;
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+
+			.comment_item {
+				padding: 0px;
+				display: block;
+				margin-top: 30px;
+				padding-top: 30px;
+				padding-left: 90px;
+				border-top: 1px solid #e8ebf4;
+				.thumbnail_image {
+					left: 0px;
+					width: 60px;
+					height: 60px;
+				}
+				.comment_content {
+					padding: 0px;
+				}
+				.admin_name {
+					font-size: 18px;
+					margin-bottom: 3px;
+				}
+				p {
+					font-size: 14px;
+				}
+
+				.post_time {
+					font-size: 14px;
+					margin-bottom: 12px;
+				}
+			}
+		}
+	}
+
+	.comment_form {
+		.form_item {
+			textarea {
+				min-height: 180px;
+			}
+		}
+	}
+}
+/* blog details page - end
+================================================== */
+
+
+/* casestudy details page - start
+================================================== */
+.casestudy_details {
+	.item_content {
+		.btns_group {
+			>ul {
+				>li {
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+}
+/* casestudy details page - end
+================================================== */
+
+
+/* portfolio details page - start
+================================================== */
+.portfolio_details {
+	.item_image {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0px !important;
+		}
+	}
+
+	.portfolio_details_info {
+		>ul {
+			>li {
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+				span {
+					display: block;
+					color: $default-darkblue;
+				}
+
+				a {
+					color: $default-color;
+					&:hover {
+						color: $default-blue;
+						text-decoration: underline;
+					}
+				}
+
+				.service_list {
+					>ul {
+						>li {
+							position: relative;
+							margin-right: 10px;
+							padding-right: 5px;
+							&:before {
+								right: 0px;
+								bottom: 0px;
+								content: ',';
+								position: absolute;
+								color: $default-color;
+							}
+							&:last-child {
+								margin-right: 0px !important;
+								padding-right: 0px !important;
+								&:before {
+									display: none;
+								}
+							}
+							>a {
+								display: block;
+							}
+						}
+					}
+				}
+
+				.share_links_rounded {
+					margin-top: 5px;
+					>ul {
+						>li {
+							>a {
+								color: #ffffff;
+								&:hover {
+									color: #ffffff;
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.li_50 {
+			>ul {
+				width: auto;
+				display: flex;
+				flex-wrap: wrap;
+				margin-left: -15px;
+				margin-right: -15px;
+				>li {
+					flex: 0 0 50%;
+					max-width: 50%;
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+}
+/* portfolio details page - end
+================================================== */
+
+
+/* shop details page - start
+================================================== */
+.shop_details {
+
+	.item_content {
+		padding-left: 30px;
+	}
+	.item_title {
+		font-size: 24px;
+	}
+
+	.item_price {
+		display: block;
+		font-size: 17px;
+		strong {
+			margin-right: 5px;
+			color: $default-darkblue;
+		}
+	}
+
+	.item_availability {
+		display: block;
+		font-size: 17px;
+		position: relative;
+		padding-left: 20px;
+		&:before {
+			top: 3px;
+			left: 0px;
+			font-size: 14px;
+			position: absolute;
+			font-family: 'themify';
+		}
+		&.in_stock {
+			color: $default-green;
+			&:before {
+				content: "\e655";
+			}
+		}
+		&.out_stock {
+			color: red;
+			&:before {
+				content: "\e646";
+			}
+		}
+	}
+
+	.btns_group {
+		>ul {
+			>li {
+				>button,a {
+					padding: 0px;
+					display: block;
+					color: #677294;
+					line-height: 48px;
+					text-align: center;
+					background: #f9f9fc;
+					border: 1px solid #e1e1e3;
+					&:hover {
+						color: #ffffff;
+						border-color: $default-blue;
+						background-color: $default-blue;
+					}
+				}
+				>button {
+					height: 50px;
+					padding: 0px 30px;
+					border-radius: 45px;
+				}
+				>a {
+					width: 50px;
+					height: 50px;
+					line-height: 52px;
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+
+	.share_links {
+		.list_title {
+			font-size: 16px;
+		}
+		>ul {
+			>li {
+				margin-right: 20px;
+				>a {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+}
+/* shop details page - end
+================================================== */
+
+
+/* review section - start
+================================================== */
+.review_section {
+	.review_nav {
+		>ul {
+			overflow: hidden;
+			border-radius: 45px;
+			border: 1px solid #e1e1e3;
+			>li {
+				height: 50px;
+				text-align: center;
+				border-right: 1px solid #e1e1e3;
+				&:last-child {
+					border-right: none;
+				}
+				>a {
+					width: 100%;
+					height: 100%;
+					display: block;
+					padding: 0px 30px;
+					line-height: 50px;
+					color: $default-color;
+					&:hover,
+					&.active {
+						color: #ffffff;
+						background-color: $default-blue;
+					}
+				}
+			}
+		}
+	}
+
+	.tab-pane {
+		.item_title {
+			font-size: 22px;
+		}
+	}
+
+	.comment_item {
+		margin-bottom: 40px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #e1e1e3;
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0px !important;
+			padding-bottom: 0px !important;
+		}
+		.thumbnail_image {
+			float: left;
+			width: 70px;
+			height: 70px;
+			overflow: hidden;
+			margin-right: 20px;
+			border-radius: 100%;
+		}
+		.comment_content {
+			display: table;
+			.admin_name {
+				font-size: 20px;
+				font-family: 'Sofia Pro Medium';
+				span {
+					font-size: 16px;
+					color: $default-color;
+					font-family: 'Sofia Pro Light';
+				}
+			}
+		}
+	}
+
+	.review_form {
+		.form_item {
+			textarea {
+				min-height: 200px;
+			}
+		}
+		.rating_star {
+			>ul {
+				>li {
+					color: $default-color;
+					>button {
+						font-size: 14px;
+						color: $default-color;
+					}
+					&:hover,
+					&:focus,
+					&.active {
+						color: #fbc509;
+						>button {
+							color: #fbc509;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* review section - end
+================================================== */
+
+/* 19 - all details pages - end
+==================================================================================================== */

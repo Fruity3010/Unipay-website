@@ -1,0 +1,55 @@
+/* 25 - error page - start
+==================================================================================================== */
+.error_section {
+	overflow: hidden;
+	min-height: 100vh;
+	&.bg_gradient_blue {
+		background-image: linear-gradient( 45deg, rgb(48,28,171) 0%, rgb(68,72,211) 52%, rgb(87,116,250) 100%);
+	}
+	.spahe_1,
+	.spahe_2 {
+		max-width: 565px;
+	}
+	.spahe_1 {
+		top: -100px;
+		right: -100px;
+	}
+	.spahe_2 {
+		left: -100px;
+		bottom: -100px;
+	}
+
+	.error_content {
+		.page_title {
+			line-height: 1;
+			font-size: 300px;
+			margin-bottom: 10px;
+		}
+		.title_text {
+			line-height: 1;
+			font-size: 44px;
+			margin-bottom: 30px;
+			letter-spacing: 2.4px;
+			font-family: 'Sofia Pro Light';
+		}
+		p {
+			font-size: 18px;
+			margin-bottom: 60px;
+		}
+
+		.btn {
+			min-width: 220px;
+		}
+	}
+
+	&.text-white {
+		.error_content {
+			.page_title,
+			.title_text {
+				color: #ffffff;
+			}
+		}
+	}
+}
+/* 25 - error page - end
+==================================================================================================== */

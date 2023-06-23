@@ -1,0 +1,98 @@
+/* 06 - sidebar section - start
+==================================================================================================== */
+.sidebar_section {
+
+	&.pl-30 {
+		padding-left: 30px;
+	}
+
+	.widget {
+		margin-bottom: 60px;
+		&:last-child {
+			margin-bottom: 0px !important;
+		}
+	}
+
+	.widget_title {
+		font-size: 30px;
+	}
+
+	.sidebar_search {
+		input {
+			border-radius: 6px;
+			background-color: #f3f4f9;
+			border: 1px solid #f3f4f9;
+		}
+		button[type=submit] {
+			top: 50%;
+			right: 20px;
+			line-height: 1;
+			position: absolute;
+			color: $default-black;
+			transform: translateY(-50%);
+		}
+	}
+
+	.sidebar_blog {
+		>ul {
+			>li {
+				margin-bottom: 20px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+			}
+		}
+	}
+
+	.sidebar_category {
+		>ul {
+			>li {
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0px !important;
+				}
+				>a {
+					color: $default-color;
+					>span {
+						margin-left: 5px;
+						display: inline-block;
+					}
+					&:hover {
+						color: $default-blue;
+					}
+				}
+			}
+		}
+	}
+
+	.sidebar_tag {
+		.tag_list {
+			margin: -4px;
+			>ul {
+				width: 100%;
+				li {
+					padding: 4px;
+					>a {
+						width: 100%;
+						height: 40px;
+						display: block;
+						font-size: 14px;
+						line-height: 40px;
+						padding: 0px 20px;
+						text-align: center;
+						border-radius: 45px;
+						color: $default-color;
+						background-color: #f0f2f9;
+						&:hover {
+							color: #ffffff;
+							background-color: $default-blue;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+/* 06 - sidebar section - end
+==================================================================================================== */

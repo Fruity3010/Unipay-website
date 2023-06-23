@@ -1,0 +1,138 @@
+/* 05 - breadcrumb section - start
+==================================================================================================== */
+.breadcrumb_section {
+	overflow: hidden;
+	min-height: 500px;
+	padding: 80px 0px;
+	&.bg_gradient_blue {
+		background-image: linear-gradient( 45deg, rgb(48,28,171) 0%, rgb(68,72,211) 52%, rgb(87,116,250) 100%);
+	}
+	.deco_wrap {
+		overflow: hidden;
+	}
+	.spahe_1,
+	.spahe_2 {
+		max-width: 565px;
+	}
+	.spahe_1 {
+		top: -100px;
+		right: -100px;
+	}
+	.spahe_2 {
+		left: -100px;
+		bottom: -100px;
+	}
+	.overlay_black {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		content: '';
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+
+	.breadcrumb_content {
+		z-index: 1;
+		max-width: 780px;
+		margin: 0px auto;
+		margin-top: 100px;
+		position: relative;
+		.page_title {
+			font-size: 64px;
+			line-height: 1.2;
+			margin-bottom: 20px;
+			letter-spacing: -0.9px;
+		}
+		p {
+			font-size: 18px;
+			max-width: 540px;
+			display: inline-block;
+			font-family: $body-font;
+		}
+		.breadcrumb_nav {
+			>ul {
+				>li {
+					position: relative;
+					margin-right: 15px;
+					padding-right: 15px;
+					&:after {
+						top: 60%;
+						right: -5px;
+						line-height: 1;
+						font-size: 10px;
+						content: "\e649";
+						position: absolute;
+						font-family: 'themify';
+						transform: translateY(-60%);
+					}
+					&:last-child {
+						margin-right: 0px !important;
+						padding-right: 0px !important;
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.filter-btns-group {
+		>ul {
+			>li {
+				>button {
+					font-size: 15px;
+					color: rgba(255, 255, 255, 0.6);
+					&:hover,
+					&.active {
+						color: #ffffff;
+						background-color: rgba(255, 255, 255, 0.05);
+					}
+				}
+			}
+		}
+	}
+
+	&.text-white {
+		.breadcrumb_content {
+
+			.page_title {
+				color: #ffffff;
+			}
+
+			.breadcrumb_nav {
+				>ul {
+					>li {
+						&:after {
+							color: #ffffff;
+						}
+						>a {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+/* blog details - start */
+.breadcrumb_section {
+	.decrease_size {
+		.page_title {
+			font-size: 50px;
+		}
+	}
+}
+
+.blog_details_page {
+	.breadcrumb_section .breadcrumb_content {
+		margin-top: 80px;
+	}
+}
+/* blog details - end */
+
+/* 05 - breadcrumb section - end
+==================================================================================================== */

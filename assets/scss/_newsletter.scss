@@ -1,0 +1,90 @@
+/* 09 - newsletter section - start
+==================================================================================================== */
+.newsletter_section {
+	&.bg_gradient_blue {
+		background-image: linear-gradient( 45deg, rgb(48,28,171) 0%, rgb(68,72,211) 52%, rgb(87,116,250) 100%);
+	}
+	&.bg_gradient_blue_2 {
+		background-image: linear-gradient( 45deg, rgb(65,80,241) 0%, rgb(88,208,255) 100%);
+	}
+
+	.form_item {
+		input {
+			border: none;
+			padding: 0px;
+			font-size: 16px;
+			border-radius: 0px;
+			text-align: center;
+			color: $default-darkblue;
+			background-color: transparent;
+			border-bottom: 1px solid $default-darkblue;
+			&:-moz-placeholder {color: $default-darkblue;}
+			&::-moz-placeholder {color: $default-darkblue;}
+			&:-ms-input-placeholder {color: $default-darkblue;}
+			&::-webkit-input-placeholder {color: $default-darkblue;}
+		}
+	}
+
+	&.text-white {
+		.form_item {
+			input {
+				border: none;
+				padding: 0px;
+				color: #ffffff;
+				font-size: 16px;
+				border-radius: 0px;
+				text-align: center;
+				background-color: transparent;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+				&:-moz-placeholder {color: #ffffff;}
+				&::-moz-placeholder {color: #ffffff;}
+				&:-ms-input-placeholder {color: #ffffff;}
+				&::-webkit-input-placeholder {color: #ffffff;}
+			}
+		}
+	}
+
+	.btn {
+		font-size: 18px;
+	}
+
+	.newsletter_boxed {
+		z-index: 2;
+		overflow: hidden;
+		padding: 60px 0px;
+		position: relative;
+		border-radius: 6px;
+		margin-bottom: -100px;
+		&.p-60 {
+			padding: 60px;
+		}
+		&.bg_gradient_blue {
+			background-image: linear-gradient( 45deg, rgb(48,28,171) 0%, rgb(68,72,211) 52%, rgb(87,116,250) 100%);
+		}
+		&.bg_gradient_lightblue {
+			background-image: linear-gradient( 45deg, rgb(65,80,241) 0%, rgb(88,208,255) 100%);
+		}
+		&.bg_gradient_purple {
+			background-image: linear-gradient(-45deg, rgb(94,44,237) 0%, rgb(164,133,253) 100%);
+		}
+		&.bg_gradient_royalblue {
+			background-image: linear-gradient(-45deg, rgb(66,24,196) 0%, rgb(104,109,253) 100%);
+		}
+		&.bg_purple {
+			background-color: rgb(94, 44, 237);
+		}
+
+		.shape_1 {
+			left: 0px;
+			bottom: 70px;
+			max-width: 200px;
+		}
+		.shape_2 {
+			right: 60px;
+			bottom: 110px;
+			max-width: 100px;
+		}
+	}
+}
+/* 09 - newsletter section - end
+==================================================================================================== */

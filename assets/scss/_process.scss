@@ -1,0 +1,110 @@
+/* 20 - process page - start
+==================================================================================================== */
+.process_section {
+
+	.line_bg {
+		position: relative;
+		padding-bottom: 160px;
+		background-size: 50% 100%;
+		background-position: left 15px bottom;
+		&:after,
+		&:before {
+			left: 51.4%;
+			content: '';
+			position: absolute;
+			border-radius: 100%;
+			transform: translateX(-51.4%);
+		}
+		&:before {
+			width: 20px;
+			height: 20px;
+			bottom: -8px;
+			background-color: rgba(65, 84, 241, 0.16);
+		}
+		&:after {
+			width: 8px;
+			height: 8px;
+			bottom: -2px;
+			background-color: $default-blue;
+		}
+	}
+
+	.process_item {
+		position: relative;
+		padding-left: 65px;
+		margin-bottom: 60px;
+		padding-bottom: 100px;
+		&:last-child {
+			margin-bottom: 0px !important;
+			padding-bottom: 0px !important;
+		}
+		.item_image {
+			margin: 0px auto;
+			max-width: 440px;
+		}
+		.item_content {
+			position: relative;
+			&:before {
+				top: -9px;
+				left: -74px;
+				content: '';
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				border-radius: 100%;
+				background-color: rgba(65, 84, 241, 0.16);
+			}
+			&:after {
+				top: -3px;
+				left: -68px;
+				width: 8px;
+				height: 8px;
+				content: '';
+				position: absolute;
+				border-radius: 100%;
+				background-color: $default-blue;
+			}
+		}
+		&:nth-child(2n+0) {
+			.item_content {
+				&:before {
+					left: -70px;
+				}
+				&:after {
+					left: -64px;
+				}
+			}
+		}
+		.serial_number {
+			line-height: 1;
+			font-size: 60px;
+			margin-top: -35px;
+			margin-bottom: 45px;
+			letter-spacing: 5px;
+			display: inline-block;
+			font-family: $heading-font;
+			text-shadow: -5px 5px 0px #eceefe;
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: #cdcecf;
+			-webkit-text-fill-color: transparent;
+		}
+		.item_title {
+			font-size: 36px;
+			margin-bottom: 25px;
+		}
+		.details_btn {
+			width: 50px;
+			height: 50px;
+			color: #ffffff;
+			font-size: 22px;
+			line-height: 52px;
+			text-align: center;
+			border-radius: 100%;
+			box-shadow: 0px 10px 20px 0px rgba(62, 92, 255, 0.2);
+			background-image: linear-gradient( 45deg, rgb(48,28,171) 0%, rgb(68,72,211) 52%, rgb(87,116,250) 100%);
+		}
+	}
+
+}
+/* 20 - process page - end
+==================================================================================================== */

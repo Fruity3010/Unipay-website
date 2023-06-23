@@ -1,0 +1,96 @@
+/* 15 - team page - start
+==================================================================================================== */
+
+.team_grid {
+	max-width: 255px;
+	text-align: center;
+	margin: 50px auto 0px;
+	.member_image {
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 20px;
+		transition: $default-transition;
+		background-image: linear-gradient( 90deg, #301cab, #5773fa);
+		>img {
+			transition: $default-transition;
+		}
+	}
+	&:hover {
+		.member_image {
+			transform: translateY(-16px);
+			box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.2);
+			>img {
+				opacity: .1;
+			}
+		}
+	}
+
+	.social_icon {
+		top: 50%;
+		left: 0px;
+		right: 0px;
+		z-index: 1;
+		position: absolute;
+		transform: translateY(-50%);
+		>ul {
+			>li {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(30px);
+				>a {
+					color: #ffffff;
+					i {
+						color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+	&:hover {
+		.social_icon {
+			>ul {
+				>li {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0px);
+					&:nth-child(1) {
+						transition-delay: .05s;
+					}
+					&:nth-child(2) {
+						transition-delay: .1s;
+					}
+					&:nth-child(3) {
+						transition-delay: .2s;
+					}
+					&:nth-child(4) {
+						transition-delay: .3s;
+					}
+				}
+			}
+		}
+	}
+
+	.member_name {
+		margin-bottom: 5px;
+		>a {
+			font-size: 22px;
+			color: $default-darkblue;
+		}
+	}
+	&:hover {
+		.member_name {
+			>a {
+				color: $default-blue;
+			}
+		}
+	}
+
+	.member_title {
+		color: #6a7c92;
+		font-size: 14px;
+		display: inline-block;
+	}
+}
+
+/* 15 - team page - end
+==================================================================================================== */

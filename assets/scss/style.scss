@@ -1,0 +1,85 @@
+/* table of content - start
+==================================================================================================== */
+/*
+
+Project Name 	:  Makro HTML Template
+File 			    :  CSS Base
+Version 		  :  1.0.0
+Last change 	:  22 April 2020
+Author 			  :  DroitThemes - by DroitLab
+Developer:		:  Rony
+
+==================================================
+
+# Default Settings
+  01 - fonts
+  02 - global area
+
+# Default sections
+  03 - header section
+  04 - footer section
+
+  05 - breadcrumb section
+  06 - sidebar section
+  07 - partners section
+  08 - testimonial section
+  09 - newsletter section
+  10 - promotion section
+  11 - seo section
+  12 - intregation section
+
+  13 - about page
+  14 - services pages
+  15 - team page
+  16 - pricing page
+  17 - casestudy page
+  18 - shop pages
+  19 - all details pages
+  20 - process page
+  21 - job pages
+  22 - blog pages
+  23 - faq
+  24 - contact page
+  25 - error page
+  26 - register pages
+
+  27 - home pages
+
+*/
+/* table of content - end
+==================================================================================================== */
+
+@import "variable";
+@import "fonts";
+@import "reset";
+
+@import "header";
+@import "footer";
+
+@import "breadcrumb";
+@import "sidebar";
+@import "partners";
+@import "testimonial";
+@import "newsletter";
+@import "promotion";
+@import "seo";
+@import "intregation";
+
+@import "about";
+@import "services";
+@import "team";
+@import "pricing";
+@import "casestudy";
+@import "shop";
+@import "details";
+@import "process";
+@import "job";
+@import "blog";
+@import "faq";
+@import "contact";
+@import "error";
+@import "register";
+
+@import "home";
+
+@import "responsive";

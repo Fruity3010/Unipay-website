@@ -1,0 +1,34 @@
+// default font - start
+// ==================================================
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+$body-font: "Sofia Pro";
+// $body-font: 'Open Sans', sans-serif;
+// $secondary-font: 'Roboto', sans-serif;
+$heading-font: 'Sofia Pro Bold', sans-serif;
+// default font - end
+// ==================================================
+
+// default color - start
+// ==================================================
+$default-blue: #4154f1;
+$default-past: #31e1af;
+$default-green: #63cf8d;
+$default-color: #6a7c92;
+$default-black: #303030;
+$default-purple: #7447f2;
+$default-orange: #ff6b00;
+$default-brinjal: #5e2ced;
+$default-darkblue: #051441;
+$default-royalblue: #523cdc;
+
+$rating-star: #f2b01e;
+// default color - end
+// ==================================================
+
+// transition - start
+// ==================================================
+$default-transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+// transition - end
+// ==================================================
